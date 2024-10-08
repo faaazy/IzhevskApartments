@@ -1,0 +1,125 @@
+/* CTA */
+.cta {
+  padding: 50px 0;
+}
+.cta__card {
+  position: relative;
+  padding: 65px;
+
+  background-color: var(--accent);
+  border-radius: 30px;
+}
+@media (max-width: 768px) {
+  .cta__card {
+    padding: 55px 15px;
+  }
+}
+.cta__card::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  display: block;
+  background-image: url(./../img/cta/question.svg);
+  width: 167px;
+  height: 216px;
+}
+.cta__card-row {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 10px;
+}
+@media (max-width: 1200px) {
+  .cta__card-row {
+    flex-direction: column;
+    gap: 40px;
+    align-items: normal;
+  }
+  .cta__form-info {
+    text-align: left;
+  }
+}
+.cta__card-title {
+  max-width: 427px;
+  color: var(--white);
+}
+
+.cta__form-wrapper {
+  text-align: center;
+}
+.cta__form {
+  display: flex;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .cta__form {
+    flex-direction: column;
+  }
+}
+.cta__form-input {
+  max-width: 185px;
+  padding: 15px 10px;
+
+  text-align: center;
+  background-color: #dbdbdb;
+  border-radius: 10px;
+}
+.cta__form-input::placeholder {
+  font-style: italic;
+  color: var(--text-color);
+}
+.cta__form-btn {
+  max-width: 185px;
+  padding: 15px 55px;
+
+  background-color: #fff;
+  color: var(--accent);
+}
+.cta__form-btn:hover {
+  background-color: #ebebeb;
+}
+.cta__form-info {
+  margin-top: 5px;
+  color: #dbdbdb;
+  font-size: 11px;
+  font-weight: 400;
+}
+@media (max-width: 1200px) {
+  .cta__form {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+  .cta__form-input {
+    max-width: unset;
+    width: 100%;
+    padding: 15px 10px;
+
+    text-align: center;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+  }
+  .cta__form-btn {
+    max-width: unset;
+    width: 100%;
+    padding: 15px 10px;
+
+    background-color: #fff;
+    color: var(--accent);
+  }
+}
+@media (max-width: 768px) {
+  .cta {
+    padding: 0 0 50px 0;
+  }
+  .cta .container {
+    padding: 0;
+  }
+  .cta__card {
+    border-radius: 0;
+  }
+}

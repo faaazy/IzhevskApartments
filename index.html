@@ -1,0 +1,1424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartments</title>
+    <link rel="shortcut icon" href="./img/header/logo.svg" type="image/svg" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="contacts-fixed">
+      <img class="contacts-fixed__img" src="./img/header/up-arrow-fixed.svg" alt="" />
+      <div class="contacts-fixed__row contacts-fixed__row--hidden">
+        <a class="contacts-fixed__row-item" href="https://www.vk.com" target="_blank">
+          <img src="./img/header/vk.svg" alt="" />
+        </a>
+        <a class="contacts-fixed__row-item" href="tel:+71234567890">
+          <img src="./img/header/whatsapp.svg" alt="" />
+        </a>
+        <a class="contacts-fixed__row-item" href="https://t.me/faaazyyeep" target="_blank">
+          <img src="./img/header/tg.svg" alt="" />
+        </a>
+      </div>
+    </div>
+
+    <header id="header" class="header">
+      <div class="container">
+        <div class="header__row">
+          <a href="#header" class="logo">
+            <img src="./img/header/logo.svg" alt="" />
+            центр <br />
+            новостроек <br />
+            в ижевске
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a class="nav__list-link" href="#header">Главная</a></li>
+              <li class="nav__list-item"><a class="nav__list-link" href="#cards">Все ЖК Ижевска</a></li>
+              <li class="nav__list-item"><a class="nav__list-link" href="#map-section">Карта новостроек</a></li>
+              <li class="nav__list-item"><a class="nav__list-link" href="#footer">О компании</a></li>
+            </ul>
+            <div class="nav__contacts">
+              <a class="nav__contacts-phone" href="tel:88000000000">8 800 000 00 00</a>
+              <div class="nav__contacts-row">
+                <a href="https://www.vk.com" target="_blank">
+                  <img src="./img/header/vk.svg" alt="" />
+                </a>
+                <a href="tel:+71234567890">
+                  <img src="./img/header/whatsapp.svg" alt="" />
+                </a>
+                <a href="https://t.me/faaazyyeep" target="_blank">
+                  <img src="./img/header/tg.svg" alt="" />
+                </a>
+              </div>
+              <button class="nav__contacts-btn btn-outline">Перезвоните нам</button>
+            </div>
+          </nav>
+          <div class="header__nav-btn">
+            <button class="nav-icon-btn">
+              <div class="nav-icon"></div>
+            </button>
+          </div>
+        </div>
+
+        <div class="header__main">
+          <div class="header__main-content">
+            <h1 class="header__main-content__title title-1">
+              Все новостройки<br />
+              Ижевска
+            </h1>
+            <button class="header__main-btn btn">Посмотреть ЖК</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="badges-type">
+        <div class="container">
+          <div class="badges-type__row">
+            <!-- badge -->
+            <button type="button" class="badge badge--active">
+              Жилая
+              <img class="badge__remove" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Коммерческая
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Паркинги
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Кладовые
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+          </div>
+        </div>
+      </section>
+
+      <section class="filter">
+        <div class="container">
+          <form class="form">
+            <div class="form__row">
+              <!-- Rooms -->
+              <div class="form__item form__item--room">
+                <h4 class="form__item-title title-4">Комнатность</h4>
+                <div class="form__item-body">
+                  <!-- room -->
+                  <label class="room">
+                    <input type="checkbox" name="value-01" class="checkbox-real" />
+                    <span class="checkbox-fake">C</span>
+                  </label>
+                  <!-- //room -->
+
+                  <!-- room -->
+                  <label class="room">
+                    <input type="checkbox" name="value-02" class="checkbox-real" />
+                    <span class="checkbox-fake">1</span>
+                  </label>
+                  <!-- //room -->
+
+                  <!-- room -->
+                  <label class="room">
+                    <input type="checkbox" name="value-03" class="checkbox-real" />
+                    <span class="checkbox-fake">2</span>
+                  </label>
+                  <!-- //room -->
+
+                  <!-- room -->
+                  <label class="room">
+                    <input type="checkbox" name="value-04" class="checkbox-real" />
+                    <span class="checkbox-fake">3</span>
+                  </label>
+                  <!-- //room -->
+
+                  <!-- room -->
+                  <label class="room">
+                    <input type="checkbox" name="value-05" class="checkbox-real" />
+                    <span class="checkbox-fake">4+</span>
+                  </label>
+                  <!-- //room -->
+                </div>
+              </div>
+
+              <!-- Price -->
+              <div class="form__item form__item--range">
+                <h4 class="form__item-title title-4">Цена, млн руб</h4>
+                <div class="form__item-body">
+                  <div class="slider-value">
+                    <div id="title-min" class="slider-value__title">3,0</div>
+                    <div id="title-max" class="slider-value__title">120,0</div>
+                  </div>
+                  <div class="double-slider">
+                    <div class="double-slider__body">
+                      <div class="double-slider__track">
+                        <div id="slider-range" class="double-slider__range"></div>
+                        <div id="dot-left" class="double-slider__dot double-slider__dot--left"></div>
+                        <div id="dot-right" class="double-slider__dot double-slider__dot--right"></div>
+                      </div>
+                      <input id="input-left" min="30" max="1200" value="30" type="range" class="double-slider__input" />
+                      <input id="input-right" min="30" max="1200" value="1200" type="range" class="double-slider__input" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Deadline -->
+              <div class="form__item form__item--time">
+                <h4 class="form__item-title title-4">Срок сдачи</h4>
+                <div class="form__item-body">
+                  <!-- time -->
+                  <label class="time">
+                    <input type="checkbox" name="value-already" class="checkbox-real" />
+                    <span class="checkbox-fake">Сдан</span>
+                  </label>
+                  <!-- //time -->
+
+                  <!-- time -->
+                  <label class="time">
+                    <input type="checkbox" name="value-2025" class="checkbox-real" />
+                    <span class="checkbox-fake">2025</span>
+                  </label>
+                  <!-- //time -->
+
+                  <!-- time -->
+                  <label class="time">
+                    <input type="checkbox" name="value-2026" class="checkbox-real" />
+                    <span class="checkbox-fake">2026</span>
+                  </label>
+                  <!-- //time -->
+
+                  <!-- time -->
+                  <label class="time">
+                    <input type="checkbox" name="value-2027" class="checkbox-real" />
+                    <span class="checkbox-fake">2027+</span>
+                  </label>
+                  <!-- //time -->
+                </div>
+              </div>
+
+              <!-- Decor -->
+              <div class="form__item form__item--decor">
+                <h4 class="form__item-title title-4">Отделка</h4>
+                <div class="form__item-body">
+                  <!-- decor -->
+                  <label class="decor">
+                    <input type="checkbox" name="value-without" class="checkbox-real" />
+                    <span class="checkbox-fake">Без отделки</span>
+                  </label>
+                  <!-- //decor -->
+
+                  <!-- decor -->
+                  <label class="decor">
+                    <input type="checkbox" name="value-with" class="checkbox-real" />
+                    <span class="checkbox-fake">С отделкой</span>
+                  </label>
+                  <!-- //decor -->
+
+                  <!-- decor -->
+                  <label class="decor">
+                    <input type="checkbox" name="value-white" class="checkbox-real" />
+                    <span class="checkbox-fake">White box</span>
+                  </label>
+                  <!-- //decor -->
+                </div>
+              </div>
+
+              <!-- Media Filters -->
+              <div class="filters">
+                <div class="form__item">
+                  <div class="form__item--filter">
+                    <svg
+                      class="form__item--filter__img form__item--filter__img--filter"
+                      width="27"
+                      height="26"
+                      viewBox="0 0 27 26"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.896 21.9793H5.02671C5.44408 20.8209 6.55391 19.9902 7.85436 19.9902C9.15482 19.9902 10.2646 20.8209 10.682 21.9793H25.8647C26.4257 21.9793 26.8804 22.434 26.8804 22.995C26.8804 23.5559 26.4257 24.0106 25.8647 24.0106H10.682C10.2646 25.1691 9.15482 25.9997 7.85436 25.9997C6.55391 25.9997 5.44408 25.1691 5.02671 24.0106H1.896C1.33507 24.0106 0.880371 23.5559 0.880371 22.995C0.880371 22.434 1.33507 21.9793 1.896 21.9793ZM7.85436 23.9684C8.39112 23.9684 8.82784 23.5317 8.82784 22.995C8.82784 22.4582 8.39112 22.0215 7.85436 22.0215C7.31761 22.0215 6.88089 22.4582 6.88089 22.995C6.88089 23.5317 7.31761 23.9684 7.85436 23.9684ZM17.0787 11.984L1.896 11.984C1.33507 11.984 0.880371 12.4387 0.880371 12.9997C0.880371 13.5606 1.33507 14.0153 1.896 14.0153L17.0787 14.0153C17.4961 15.1738 18.6059 16.0044 19.9064 16.0044C21.2068 16.0044 22.3167 15.1738 22.734 14.0153H25.8647C26.4257 14.0153 26.8804 13.5606 26.8804 12.9997C26.8804 12.4387 26.4257 11.984 25.8647 11.984H22.734C22.3167 10.8256 21.2068 9.99494 19.9064 9.99494C18.6059 9.99494 17.4961 10.8256 17.0787 11.984ZM20.8799 12.9997C20.8799 13.5364 20.4431 13.9731 19.9064 13.9731C19.3696 13.9731 18.9329 13.5364 18.9329 12.9997C18.9329 12.4629 19.3696 12.0262 19.9064 12.0262C20.4431 12.0262 20.8799 12.4629 20.8799 12.9997ZM5.02671 1.98874H1.896C1.33507 1.98874 0.880371 2.44344 0.880371 3.00437C0.880371 3.5653 1.33507 4.01999 1.896 4.01999H5.02671C5.44408 5.17846 6.55391 6.00909 7.85436 6.00909C9.15482 6.00909 10.2646 5.17846 10.682 4.01999H25.8647C26.4257 4.01999 26.8804 3.5653 26.8804 3.00437C26.8804 2.44344 26.4257 1.98874 25.8647 1.98874H10.682C10.2646 0.830269 9.15482 -0.000362396 7.85436 -0.000362396C6.55391 -0.000362396 5.44408 0.830269 5.02671 1.98874ZM8.82784 3.00437C8.82784 3.54112 8.39112 3.97784 7.85436 3.97784C7.31761 3.97784 6.88089 3.54112 6.88089 3.00437C6.88089 2.46761 7.31761 2.03089 7.85436 2.03089C8.39112 2.03089 8.82784 2.46761 8.82784 3.00437Z"
+                        fill="#A8A8A8"
+                      />
+                    </svg>
+                    <!-- form__item--filter__menu -->
+                    <div class="form__item--filter__menu none">
+                      <div class="form__item form__item--decor">
+                        <h4 class="form__item-title title-4">Отделка</h4>
+                        <div class="form__item-body">
+                          <!-- decor -->
+                          <label class="decor">
+                            <input type="checkbox" name="value-without" class="checkbox-real" />
+                            <span class="checkbox-fake">Без отделки</span>
+                          </label>
+                          <!-- //decor -->
+
+                          <!-- decor -->
+                          <label class="decor">
+                            <input type="checkbox" name="value-with" class="checkbox-real" />
+                            <span class="checkbox-fake">С отделкой</span>
+                          </label>
+                          <!-- //decor -->
+
+                          <!-- decor -->
+                          <label class="decor">
+                            <input type="checkbox" name="value-white2" class="checkbox-real" />
+                            <span class="checkbox-fake">White box</span>
+                          </label>
+                          <!-- //decor -->
+                        </div>
+                      </div>
+
+                      <div class="form__item form__item--time">
+                        <h4 class="form__item-title title-4">Срок сдачи</h4>
+                        <div class="form__item-body">
+                          <!-- time -->
+                          <label class="time">
+                            <input type="checkbox" name="value-already" class="checkbox-real" />
+                            <span class="checkbox-fake">Сдан</span>
+                          </label>
+                          <!-- //time -->
+
+                          <!-- time -->
+                          <label class="time">
+                            <input type="checkbox" name="value-2025" class="checkbox-real" />
+                            <span class="checkbox-fake">2025</span>
+                          </label>
+                          <!-- //time -->
+
+                          <!-- time -->
+                          <label class="time">
+                            <input type="checkbox" name="value-2026" class="checkbox-real" />
+                            <span class="checkbox-fake">2026</span>
+                          </label>
+                          <!-- //time -->
+
+                          <!-- time -->
+                          <label class="time">
+                            <input type="checkbox" name="value-2027" class="checkbox-real" />
+                            <span class="checkbox-fake">2027+</span>
+                          </label>
+                          <!-- //time -->
+                        </div>
+                      </div>
+
+                      <div class="form__item form__item--room">
+                        <h4 class="form__item-title title-4">Комнатность</h4>
+                        <div class="form__item-body">
+                          <!-- room -->
+                          <label class="room">
+                            <input type="checkbox" name="value-011" class="checkbox-real" />
+                            <span class="checkbox-fake">C</span>
+                          </label>
+                          <!-- //room -->
+
+                          <!-- room -->
+                          <label class="room">
+                            <input type="checkbox" name="value-022" class="checkbox-real" />
+                            <span class="checkbox-fake">1</span>
+                          </label>
+                          <!-- //room -->
+
+                          <!-- room -->
+                          <label class="room">
+                            <input type="checkbox" name="value-033" class="checkbox-real" />
+                            <span class="checkbox-fake">2</span>
+                          </label>
+                          <!-- //room -->
+
+                          <!-- room -->
+                          <label class="room">
+                            <input type="checkbox" name="value-044" class="checkbox-real" />
+                            <span class="checkbox-fake">3</span>
+                          </label>
+                          <!-- //room -->
+
+                          <!-- room -->
+                          <label class="room">
+                            <input type="checkbox" name="value-055" class="checkbox-real" />
+                            <span class="checkbox-fake">4+</span>
+                          </label>
+                          <!-- //room -->
+                        </div>
+                      </div>
+
+                      <div class="form__item--filter__menu-close">
+                        <svg
+                          fill="#000000"
+                          height="800px"
+                          width="800px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 460.775 460.775"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                            c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                            c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                            c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                            l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                            c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <!-- //form__item--filter__menu -->
+                  </div>
+                </div>
+
+                <div class="form__item">
+                  <div class="form__item--filter">
+                    <svg
+                      class="form__item--filter__img form__item--filter__img--location"
+                      width="22"
+                      height="29"
+                      viewBox="0 0 22 29"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M10.9398 1C5.45924 1 1 5.45924 1 10.9403C1 12.37 1.29262 13.735 1.8693 14.9978C4.35452 20.436 9.11937 26.1777 10.5209 27.8077C10.6259 27.9295 10.7789 27.9997 10.94 27.9997C11.1011 27.9997 11.2542 27.9295 11.3592 27.8077C12.7602 26.1779 17.525 20.4366 20.0111 14.9978C20.588 13.735 20.8804 12.37 20.8804 10.9403C20.8798 5.45924 16.4206 1 10.9398 1ZM10.9398 16.1033C8.09284 16.1033 5.77646 13.787 5.77646 10.94C5.77646 8.09284 8.09284 5.77646 10.9398 5.77646C13.7867 5.77646 16.1031 8.09284 16.1031 10.94C16.1033 13.787 13.787 16.1033 10.9398 16.1033Z"
+                        stroke="#A8A8A8"
+                        stroke-width="2"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <!-- form__item--filter__menu -->
+                    <div class="form__item--filter__menu none">
+                      <div class="form__item form__item--class">
+                        <h4 class="badges__class-title title-4">Класс</h4>
+                        <div class="badges-class__row">
+                          <!-- badge -->
+                          <button type="button" class="badge badge--active">
+                            Эконом
+                            <img class="badge__remove" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Комфорт
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Бизнес
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Элит
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+                        </div>
+                      </div>
+
+                      <div class="form__item form__item--district">
+                        <h4 class="badges__district-title title-4">Район</h4>
+                        <div class="badges-district__row">
+                          <!-- badge -->
+                          <button type="button" class="badge badge--active">
+                            Сотка
+                            <img class="badge__remove" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Центр
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Металлург
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Север
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Буммаш
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Машиностроитель
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Малиновая гора
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Татарбазар
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            ГорСовет
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Болото
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Соцгород
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Мебельная фабрика
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Культбаза
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Радиозавод
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Ипподром
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Нефтемаш
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Автозавод
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+
+                          <!-- badge -->
+                          <button type="button" class="badge">
+                            Ворошилова
+                            <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+                          </button>
+                          <!-- //badge -->
+                        </div>
+                      </div>
+
+                      <div class="form__item--filter__menu-close">
+                        <svg
+                          fill="#000000"
+                          height="800px"
+                          width="800px"
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink"
+                          viewBox="0 0 460.775 460.775"
+                          xml:space="preserve"
+                        >
+                          <path
+                            d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
+                            c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55
+                            c-4.126,0-8.08,1.639-10.992,4.55L4.558,37.284c-6.077,6.075-6.077,15.909,0,21.986l171.138,171.128L4.575,401.505
+                            c-6.074,6.077-6.074,15.911,0,21.986l32.709,32.719c2.911,2.911,6.865,4.55,10.992,4.55c4.127,0,8.08-1.639,10.994-4.55
+                            l171.117-171.12l171.118,171.12c2.913,2.911,6.866,4.55,10.993,4.55c4.128,0,8.081-1.639,10.992-4.55l32.709-32.719
+                            c6.074-6.075,6.074-15.909,0-21.986L285.08,230.397z"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <!-- //form__item--filter__menu -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="badges__class">
+        <div class="container">
+          <h4 class="badges__class-title title-4">Класс</h4>
+          <div class="badges-class__row">
+            <!-- badge -->
+            <button type="button" class="badge badge--active">
+              Эконом
+              <img class="badge__remove" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Комфорт
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Бизнес
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Элит
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+          </div>
+        </div>
+      </section>
+
+      <section class="badges__district">
+        <div class="container">
+          <h4 class="badges__district-title title-4">Район</h4>
+          <div class="badges-district__row">
+            <!-- badge -->
+            <button type="button" class="badge badge--active">
+              Сотка
+              <img class="badge__remove" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Центр
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Металлург
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Север
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Буммаш
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Машиностроитель
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Малиновая гора
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Татарбазар
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              ГорСовет
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Болото
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Соцгород
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Мебельная фабрика
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Культбаза
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Радиозавод
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Ипподром
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Нефтемаш
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Автозавод
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+
+            <!-- badge -->
+            <button type="button" class="badge">
+              Ворошилова
+              <img class="badge__remove none" src="./img/badges/x.svg" alt="" />
+            </button>
+            <!-- //badge -->
+          </div>
+        </div>
+      </section>
+
+      <section id="cards" class="cards">
+        <div class="container">
+          <div class="cards__row">
+            <!-- card -->
+            <div class="card">
+              <div class="card__row">
+                <div class="cards__info">
+                  <div class="cards__info-slider">
+                    <!-- Swiper -->
+
+                    <!-- Swiper -->
+                  </div>
+
+                  <div class="cards__info-badges">
+                    <div class="cards__info-badges__row">
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/products.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Продукты 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/education.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Образование 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/medicine.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Медицина 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/sport.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Спорт 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/entertainment.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Развлечения 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/parks.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Парки 6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__prices">
+                  <div class="card__prices-heading">
+                    <div class="card__prices-heading__row">
+                      <div class="card__prices-heading__left">
+                        <h3 class="card__prices-heading__left-title title-3">ЖК Республика</h3>
+                        <a href="#!" class="card__prices-heading__left-link">100 квартир от застройщика «Комос»</a>
+                      </div>
+                      <div class="card__prices-heading__right">
+                        <h3 class="card__prices-heading__right-title title-3">от&nbsp;6&nbsp;355&nbsp;000&nbsp;р</h3>
+                        <a href="#!" class="card__prices-heading__right-link">В ипотеку от 13 760 р / мес</a>
+                        <div class="card__prices-heading__right-quarter">3 квартал 2025 — <br />3 квартал 2026</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-rooms">
+                    <div class="card__prices-rooms__row">
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">Студии</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">3-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">1-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">4-комнатные +</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">2-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-footer">
+                    <div class="card__prices-footer__row">
+                      <a href="#map" class="card__prices-footer__link">Ижевск, Карла Маркса 259</a>
+                      <button class="card__prices-footer__btn btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+              <div class="card__row">
+                <div class="cards__info">
+                  <div class="cards__info-slider">
+                    <!-- Swiper -->
+
+                    <!-- Swiper -->
+                  </div>
+
+                  <div class="cards__info-badges">
+                    <div class="cards__info-badges__row">
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/products.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Продукты 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/education.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Образование 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/medicine.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Медицина 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/sport.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Спорт 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/entertainment.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Развлечения 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/parks.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Парки 6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__prices">
+                  <div class="card__prices-heading">
+                    <div class="card__prices-heading__row">
+                      <div class="card__prices-heading__left">
+                        <h3 class="card__prices-heading__left-title title-3">ЖК Республика</h3>
+                        <a href="#!" class="card__prices-heading__left-link">100 квартир от застройщика «Комос»</a>
+                      </div>
+                      <div class="card__prices-heading__right">
+                        <h3 class="card__prices-heading__right-title title-3">от&nbsp;6&nbsp;355&nbsp;000&nbsp;р</h3>
+                        <a href="#!" class="card__prices-heading__right-link">В ипотеку от 13 760 р / мес</a>
+                        <div class="card__prices-heading__right-quarter">3 квартал 2025 — <br />3 квартал 2026</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-rooms">
+                    <div class="card__prices-rooms__row">
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">Студии</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">3-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">1-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">4-комнатные +</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">2-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-footer">
+                    <div class="card__prices-footer__row">
+                      <a href="#map" class="card__prices-footer__link">Ижевск, Карла Маркса 259</a>
+                      <button class="card__prices-footer__btn btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+              <div class="card__row">
+                <div class="cards__info">
+                  <div class="cards__info-slider">
+                    <!-- Swiper -->
+
+                    <!-- Swiper -->
+                  </div>
+
+                  <div class="cards__info-badges">
+                    <div class="cards__info-badges__row">
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/products.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Продукты 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/education.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Образование 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/medicine.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Медицина 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/sport.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Спорт 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/entertainment.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Развлечения 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/parks.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Парки 6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__prices">
+                  <div class="card__prices-heading">
+                    <div class="card__prices-heading__row">
+                      <div class="card__prices-heading__left">
+                        <h3 class="card__prices-heading__left-title title-3">ЖК Республика</h3>
+                        <a href="#!" class="card__prices-heading__left-link">100 квартир от застройщика «Комос»</a>
+                      </div>
+                      <div class="card__prices-heading__right">
+                        <h3 class="card__prices-heading__right-title title-3">от&nbsp;6&nbsp;355&nbsp;000&nbsp;р</h3>
+                        <a href="#!" class="card__prices-heading__right-link">В ипотеку от 13 760 р / мес</a>
+                        <div class="card__prices-heading__right-quarter">3 квартал 2025 — <br />3 квартал 2026</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-rooms">
+                    <div class="card__prices-rooms__row">
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">Студии</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">3-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">1-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">4-комнатные +</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">2-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-footer">
+                    <div class="card__prices-footer__row">
+                      <a href="#map" class="card__prices-footer__link">Ижевск, Карла Маркса 259</a>
+                      <button class="card__prices-footer__btn btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- card -->
+            <div class="card">
+              <div class="card__row">
+                <div class="cards__info">
+                  <div class="cards__info-slider">
+                    <!-- Swiper -->
+
+                    <!-- Swiper -->
+                  </div>
+
+                  <div class="cards__info-badges">
+                    <div class="cards__info-badges__row">
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/products.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Продукты 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/education.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Образование 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/medicine.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Медицина 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/sport.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Спорт 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/entertainment.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Развлечения 6</span>
+                      </div>
+                      <!-- info-badge -->
+                      <div class="cards__info-badges__badge">
+                        <img src="./img/cards/parks.svg" alt="" />
+                        <span class="cards__info-badges__badge-title">Парки 6</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cards__prices">
+                  <div class="card__prices-heading">
+                    <div class="card__prices-heading__row">
+                      <div class="card__prices-heading__left">
+                        <h3 class="card__prices-heading__left-title title-3">ЖК Республика</h3>
+                        <a href="#!" class="card__prices-heading__left-link">100 квартир от застройщика «Комос»</a>
+                      </div>
+                      <div class="card__prices-heading__right">
+                        <h3 class="card__prices-heading__right-title title-3">от&nbsp;6&nbsp;355&nbsp;000&nbsp;р</h3>
+                        <a href="#!" class="card__prices-heading__right-link">В ипотеку от 13 760 р / мес</a>
+                        <div class="card__prices-heading__right-quarter">3 квартал 2025 — <br />3 квартал 2026</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-rooms">
+                    <div class="card__prices-rooms__row">
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">Студии</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">3-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">1-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">4-комнатные +</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                      <!-- rooms__item -->
+                      <div class="card__prices-rooms__item">
+                        <span class="card__prices-rooms__item-accent">2-комнатные</span>
+                        <span class="card__prices-rooms__item-price">от 6,4 млн р</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card__prices-footer">
+                    <div class="card__prices-footer__row">
+                      <a href="#map" class="card__prices-footer__link">Ижевск, Карла Маркса 259</a>
+                      <button class="card__prices-footer__btn btn">Подробнее</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-swiper__row">
+            <div class="swiper mySwiperCards">
+              <div class="swiper-wrapper">
+                <!-- cards-swiper__card -->
+                <div class="cards-swiper__card swiper-slide">
+                  <img src="./img/cards/card-img01.jpg" alt="" />
+                  <div class="cards-swiper__card-body">
+                    <h3 class="card-swiper__title title-3">ЖК Республика</h3>
+                    <div class="card-swiper__quarter">3 квартал 2025 — <br />3 квартал 2026</div>
+                    <h3 class="card-swiper__price title-3">от&nbsp;6&nbsp;355&nbsp;000&nbsp;р</h3>
+                  </div>
+                </div>
+                <!-- cards-swiper__card -->
+                <div class="cards-swiper__card swiper-slide">
+                  <img src="./img/cards/card-img01.jpg" alt="" />
+                  <div class="cards-swiper__card-body">
+                    <h3 class="card-swiper__title title-3">ЖК Республика</h3>
+                    <div class="card-swiper__quarter">3 квартал 2025 — <br />3 квартал 2026</div>
+                    <h3 class="card-swiper__price title-3">от&nbsp;6&nbsp;355&nbsp;000&nbsp;р</h3>
+                  </div>
+                </div>
+                <!-- cards-swiper__card -->
+                <div class="cards-swiper__card swiper-slide">
+                  <img src="./img/cards/card-img01.jpg" alt="" />
+                  <div class="cards-swiper__card-body">
+                    <h3 class="card-swiper__title title-3">ЖК Республика</h3>
+                    <div class="card-swiper__quarter">3 квартал 2025 — <br />3 квартал 2026</div>
+                    <h3 class="card-swiper__price title-3">от&nbsp;6&nbsp;355&nbsp;000&nbsp;р</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__btn-show-more__wrapper">
+            <button class="cards__btn-show-more btn">Показать еще</button>
+          </div>
+          <div class="cards__btn-show-more__wrapper">
+            <button class="cards-media__btn-show-more btn">Показать еще</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="#map-section" class="map">
+        <div class="container">
+          <h2 class="map__title title-2">Карта жилых комплексов Ижевска</h2>
+          <div id="map" class="map__y-map"></div>
+        </div>
+      </section>
+
+      <section class="cta">
+        <div class="container">
+          <div class="cta__card">
+            <div class="cta__card-row">
+              <h2 class="cta__card-title title-2">Мы готовы ответить на все Ваши вопросы</h2>
+
+              <div class="cta__form-wrapper">
+                <form class="cta__form">
+                  <input type="text" class="cta__form-name cta__form-input" placeholder="Имя" />
+                  <input type="tel" class="cta__form-phone cta__form-input" placeholder="+7 --- -- --" data-tel-input />
+                  <button class="cta__form-btn btn" type="reset">Отправить</button>
+                </form>
+                <div class="cta__form-info">
+                  Нажимая кнопку «Отправить», вы подтверждаете, что согласны на обработку персональных данных.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title title-2">Отзывы</h2>
+          <div class="reviews__swiper">
+            <div class="swiper mySwiperReviews">
+              <div class="swiper-wrapper">
+                <!-- reviews__card -->
+                <div class="reviews__card swiper-slide">
+                  <div class="reviews__card-header">
+                    <img src="./img/reviews/reviews-avatar.jpg" alt="" />
+                    <h3 class="reviews__card-header__title">
+                      Максим <br />
+                      Кузнецов
+                    </h3>
+                  </div>
+
+                  <div class="reviews__card-text">
+                    Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста
+                    оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил
+                    глубокие знания в области недвижимости
+                  </div>
+
+                  <a href="#!" class="reviews__card-link">Читать отзыв</a>
+                </div>
+                <!-- reviews__card -->
+                <div class="reviews__card swiper-slide">
+                  <div class="reviews__card-header">
+                    <img src="./img/reviews/reviews-avatar.jpg" alt="" />
+                    <h3 class="reviews__card-header__title">
+                      Максим <br />
+                      Кузнецов
+                    </h3>
+                  </div>
+
+                  <div class="reviews__card-text">
+                    Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста
+                    оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил
+                    глубокие знания в области недвижимости
+                  </div>
+
+                  <a href="#!" class="reviews__card-link">Читать отзыв</a>
+                </div>
+                <!-- reviews__card -->
+                <div class="reviews__card swiper-slide">
+                  <div class="reviews__card-header">
+                    <img src="./img/reviews/reviews-avatar.jpg" alt="" />
+                    <h3 class="reviews__card-header__title">
+                      Максим <br />
+                      Кузнецов
+                    </h3>
+                  </div>
+
+                  <div class="reviews__card-text">
+                    Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста
+                    оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил
+                    глубокие знания в области недвижимости
+                  </div>
+
+                  <a href="#!" class="reviews__card-link">Читать отзыв</a>
+                </div>
+                <!-- reviews__card -->
+                <div class="reviews__card swiper-slide">
+                  <div class="reviews__card-header">
+                    <img src="./img/reviews/reviews-avatar.jpg" alt="" />
+                    <h3 class="reviews__card-header__title">
+                      Максим <br />
+                      Кузнецов
+                    </h3>
+                  </div>
+
+                  <div class="reviews__card-text">
+                    Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста
+                    оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил
+                    глубокие знания в области недвижимости
+                  </div>
+
+                  <a href="#!" class="reviews__card-link">Читать отзыв</a>
+                </div>
+                <!-- reviews__card -->
+                <div class="reviews__card swiper-slide">
+                  <div class="reviews__card-header">
+                    <img src="./img/reviews/reviews-avatar.jpg" alt="" />
+                    <h3 class="reviews__card-header__title">
+                      Максим <br />
+                      Кузнецов
+                    </h3>
+                  </div>
+
+                  <div class="reviews__card-text">
+                    Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста
+                    оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил
+                    глубокие знания в области недвижимости
+                  </div>
+
+                  <a href="#!" class="reviews__card-link">Читать отзыв</a>
+                </div>
+                <!-- reviews__card -->
+                <div class="reviews__card swiper-slide">
+                  <div class="reviews__card-header">
+                    <img src="./img/reviews/reviews-avatar.jpg" alt="" />
+                    <h3 class="reviews__card-header__title">
+                      Максим <br />
+                      Кузнецов
+                    </h3>
+                  </div>
+
+                  <div class="reviews__card-text">
+                    Я хотел бы поделиться своим положительным опытом сотрудничества с риелтором. Работа данного специалиста
+                    оказалась на самом высоком уровне, и я остался очень доволен результатом его работы. Риелтор проявил
+                    глубокие знания в области недвижимости
+                  </div>
+
+                  <a href="#!" class="reviews__card-link">Читать отзыв</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-btn mySwiperReviewsPrev">
+              <img src="./img/cards/slider-arrow.svg" alt="" />
+            </div>
+            <div class="swiper-btn mySwiperReviewsNext">
+              <img src="./img/cards/slider-arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="container">
+        <div class="footer__row">
+          <div class="footer__main-item">
+            <a href="#header" class="logo">
+              <img src="./img/header/logo.svg" alt="" />
+              центр&nbsp;новостроек <br />
+              в ижевске
+            </a>
+
+            <div class="footer__main-item__socials">
+              <a href="https://www.vk.com" target="_blank">
+                <img src="./img/header/vk.svg" alt="" />
+              </a>
+              <a href="tel:+71234567890">
+                <img src="./img/header/whatsapp.svg" alt="" />
+              </a>
+              <a href="https://t.me/faaazyyeep" target="_blank">
+                <img src="./img/header/tg.svg" alt="" />
+              </a>
+            </div>
+
+            <button class="footer__main-item__btn btn-outline">Перезвоните нам</button>
+          </div>
+
+          <ul class="footer__item">
+            <li><a href="#header">Главная</a></li>
+            <li><a href="#cards">Все ЖК Ижевска</a></li>
+            <li><a href="#map-section">Карта новостроек</a></li>
+            <li><a href="#footer">О компании</a></li>
+          </ul>
+
+          <ul class="footer__item">
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+          </ul>
+
+          <ul class="footer__item">
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+          </ul>
+
+          <ul class="footer__item">
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+            <li><a href="#!">Пункт меню</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=58579d6b-3a45-4873-9aad-c4bb7c540fc0&lang=ru_RU"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./js/mask/mask.js"></script>
+    <script src="./js/mask/mask_list.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

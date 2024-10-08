@@ -1,0 +1,226 @@
+/* Cards */
+.cards {
+    padding: 50px 0;
+  }
+  .card {
+    padding: 25px 50px 25px 25px;
+    background-color: #f8f8f8;
+    border-radius: 30px;
+  }
+  .cards__row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .card__row {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+  }
+  .cards__info {
+    max-width: 550px;
+    flex-shrink: 1;
+  }
+  .cards__info-badges {
+    margin-top: 30px;
+  }
+  .cards__info-badges__row {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1200px) {
+    .cards__info {
+      max-width: 400px;
+    }
+  }
+  @media (max-width: 900px) {
+    .cards__info {
+      max-width: 350px;
+    }
+  }
+  .cards__info-badges__badge {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px 15px;
+  
+    border: 1px solid var(--muted);
+    border-radius: 10px;
+  }
+  .cards__btn-show-more__wrapper {
+    margin-top: 40px;
+    text-align: center;
+  }
+  .cards__btn-show-more {
+    margin-top: 20px;
+  }
+  .cards-media__btn-show-more {
+    display: none;
+  }
+  
+  .cards-swiper__row {
+    display: none;
+  }
+  .cards-swiper__card {
+    /* text-align: center; */
+    background-color: #f8f8f8;
+    border-radius: 30px;
+  
+    img {
+      border-radius: 30px;
+      min-height: 200px;
+      object-fit: cover;
+    }
+  }
+  .cards-swiper__card-body {
+    padding: 12px 12px 20px 12px;
+  }
+  .card-swiper__quarter {
+    padding: 10px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .cards__row {
+      display: none;
+    }
+    .cards-swiper__row {
+      display: block;
+    }
+    .cards__btn-show-more {
+      display: none;
+    }
+    .cards-media__btn-show-more {
+      display: inline-block;
+    }
+  }
+  
+  /* Swiper */
+  
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    opacity: 1;
+    border: 1.5px solid var(--accent);
+  }
+  .swiper-pagination-bullet-active {
+    background-color: var(--accent);
+  }
+  .cards__info-slider {
+    position: relative;
+  }
+  .swiper-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 99;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 30px;
+    height: 30px;
+  
+    border-radius: 50%;
+    background-color: var(--accent);
+    transition: background-color 0.2s ease-in;
+  }
+  .swiper-btn:hover {
+    background-color: #c72626;
+  }
+  .swiper-btn--prev {
+    padding-right: 1px;
+    left: -10px;
+  }
+  
+  .swiper-btn--prev img {
+    transform: rotate(180deg);
+  }
+  .swiper-btn--next {
+    padding-left: 2px;
+    right: -10px;
+  }
+  
+  /* Cards Prices */
+  .cards__prices {
+    display: flex;
+    flex-direction: column;
+  }
+  .card__prices-heading__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px 50px;
+  }
+  @media (max-width: 900px) {
+    .card__prices-heading__row {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  .card__prices-heading__left-link {
+    line-height: 150%;
+    color: var(--accent);
+    border-bottom: 1px dashed var(--accent);
+    line-height: 1.5;
+  }
+  .card__prices-heading__right-link {
+    line-height: 150%;
+    color: var(--accent);
+    border-bottom: 1px dashed var(--accent);
+    line-height: 1.5;
+  }
+  .card__prices-heading__right-quarter {
+    margin-top: 15px;
+    line-height: 1.5;
+  }
+  
+  .card__prices-rooms {
+    flex-grow: 1;
+    margin-top: 60px;
+    text-align: center;
+  }
+  .card__prices-rooms__row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px 30px;
+  }
+  .card__prices-rooms__item {
+    max-width: 240px;
+  
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  @media (max-width: 1000px) {
+    .card__prices-rooms__item {
+      flex-direction: column;
+    }
+  }
+  .card__prices-rooms__item-accent {
+    color: var(--accent);
+  }
+  
+  .card__prices-footer__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  @media (max-width: 900px) {
+    .card__prices-footer__row {
+      margin-top: 25px;
+      flex-direction: column;
+    }
+  }
+  .card__prices-footer__link {
+    color: var(--accent);
+    border-bottom: 1px dashed var(--accent);
+  }
+  .card__prices-footer__btn {
+    padding: 10px 25px;
+  }
+  

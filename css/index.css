@@ -1,0 +1,13 @@
+@import "./reset.css";
+@import "./base.css";
+@import "./fixed-contacts.css";
+@import "./header.css";
+@import "./footer.css";
+
+@import "./main/filters.css";
+@import "./main/cards.css";
+@import "./main/map.css";
+@import "./main/cta.css";
+@import "./main/reviews.css";
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);

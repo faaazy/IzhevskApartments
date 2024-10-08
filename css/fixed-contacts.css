@@ -1,0 +1,75 @@
+/* Fixed Contacts */
+.contacts-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+  
+    max-width: 175px;
+    padding: 20px;
+  
+    background: transparent;
+    border-radius: 10px;
+    text-align: center;
+  
+    transition: all 0.2s ease-in;
+  }
+  .contacts-fixed__img {
+    max-width: 40px;
+    transition: all 0.2s ease-in;
+    cursor: pointer;
+  }
+  @media (max-width: 1200px) {
+    .contacts-fixed {
+      right: 10px;
+      bottom: 10px;
+    }
+    .contacts-fixed__img {
+      max-width: 30px;
+    }
+  }
+  .contacts-fixed__img--active {
+    transition: all 0.2s ease-in;
+    transform: rotate(180deg);
+  }
+  .contacts-fixed__title {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .contacts-fixed__row {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+  }
+  .contacts-fixed__row--hidden {
+    display: none;
+  }
+  
+  .contacts-fixed__row-item {
+    animation: pulse 10s ease-in-out infinite;
+    :hover {
+      transition: transform 0.2s ease-in;
+      transform: translateY(-4px);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      transform: rotate(0deg) scale(1);
+    }
+    25% {
+      transform: rotate(-15deg) scale(1.1);
+    }
+    50% {
+      transform: rotate(15deg) scale(1.2);
+    }
+    75% {
+      transform: rotate(-15deg) scale(1.1);
+    }
+    100% {
+      transform: rotate(0deg) scale(1);
+    }
+  }
+  

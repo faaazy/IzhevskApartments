@@ -1,0 +1,124 @@
+html {
+  scroll-behavior: smooth;
+}
+/* General */
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  appearance: none;
+  pointer-events: none;
+}
+.title-1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.title-2 {
+  font-weight: 500;
+  font-size: 36px;
+}
+.title-3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.title-4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .title-1 {
+    font-size: 29px;
+  }
+  .title-2 {
+    font-weight: 500;
+    font-size: 28px;
+  }
+  .title-3 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.5;
+  }
+  .title-4 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+.none {
+  display: none !important;
+}
+.no-scroll {
+  overflow: hidden;
+}
+.btn {
+  padding: 15px 40px;
+  text-align: center;
+
+  color: var(--white);
+  border-radius: 10px;
+  background-color: var(--accent);
+  transition: background-color 0.2s ease-in, transform 0.2s ease-in;
+}
+.btn:hover {
+  background-color: #b32121;
+}
+.btn:active {
+  transform: translateY(3px);
+}
+.btn-outline {
+  padding: 10px 25px;
+  text-align: center;
+
+  background-color: transparent;
+  border-radius: 10px;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.btn-outline:hover {
+  color: var(--white);
+  background-color: var(--accent);
+}
+@media (max-width: 768px) {
+  .btn {
+    padding: 15px 25px;
+  }
+  .btn-outline {
+    padding: 15px 25px;
+  }
+}
+.btn:active {
+  transform: translateY(3px);
+}
+.btn-disabled {
+  background-color: #b32121;
+}
+.muted {
+  color: var(--muted);
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: var(--text-color);
+  font-weight: 500;
+  font-size: 14px;
+}
+:root {
+  --text-color: #222222;
+  --accent: #dc3f3f;
+  --muted: #a8a8a8;
+  --white: #ffffff;
+
+  --time: 0.1s;
+  --width: 40px;
+  --height: 30px;
+  --line-height: 3px;
+  --line-margin: 2;
+  --color: #000;
+}
